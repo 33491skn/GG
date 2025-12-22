@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What Can I Cook?</title>
+    <title>GGGUYFOOD</title>
     <style>
         * {
             margin: 0;
@@ -258,15 +258,15 @@
 <body>
     <div class="container">
         <header>
-            <h1>🍳 What Can I Cook?</h1>
-            <p class="subtitle">Select your ingredients and discover delicious recipes!</p>
+            <h1>เว็บค้นหาเมนูอาหารอัฉริยะ</h1>
+            <p class="subtitle">กรุณาเลือกวัตถุดิบที่มี</p>
         </header>
 
         <div class="main-content">
             <div class="ingredients-panel">
-                <h2>Available Ingredients</h2>
+                <h2>วัตถุดิบ</h2>
                 <div class="ingredient-grid" id="ingredientList"></div>
-                <div class="selected-count" id="selectedCount">0 ingredients selected</div>
+                <div class="selected-count" id="selectedCount">0 วัตถุดิบที่เลือก</div>
             </div>
 
             <div class="recipes-container" id="recipesContainer"></div>
@@ -410,8 +410,8 @@
             if (selectedIngredients.size === 0) {
                 container.innerHTML = `
                     <div class="no-recipes">
-                        <h2>👋 Welcome!</h2>
-                        <p>Select some ingredients from the left panel to see what you can cook!</p>
+                        <h2>ยินดีต้อนรับ</h2>
+                        <p>กรุณาเลือกวัตถุดิบจากช่องทางด้านซ้าย เพื่อค้นหาเมนูอาหาร</p>
                     </div>
                 `;
                 return;
@@ -439,8 +439,8 @@
             if (relevantRecipes.length === 0) {
                 container.innerHTML = `
                     <div class="no-recipes">
-                        <h2>😕 No recipes found</h2>
-                        <p>Try selecting different ingredients!</p>
+                        <h2>ไม่พบเมนูที่ทำได้</h2>
+                        <p>กรุณาเลือกวัตถุดิบอื่น</p>
                     </div>
                 `;
                 return;
